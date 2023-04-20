@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>Q4 | Exercise 3</title>
+	<style>
+	    div {background-color: white; padding: 10px; border-radius: 5px}
+	    body {font-size: 25px; margin: 25px; background-color: #ffefc3}
+</style>
+</head>
+<body>
+
+<p style="font-size: 50px">Operations in JavaScript</p>
+<p style="font-size: 20px">Note: x = 10, y = 5</p>
+
+<div>
+<p>Addition</p>
+<ol>
+<li>x + y = <strong id="1"></strong></li>
+</ol>
+</div>
+
+<br>
+
+<div>
+<p>Subtraction</p>
+<ol>
+<li>x - y = <strong id="2"></strong></li>
+<li>y - x = <strong id="6"></strong></li>
+</ol>
+</div>
+
+<br>
+
+<div>
+<p>Multiplication</p>
+<ol>
+<li>x * y = <strong id="3"></strong></li>
+</ol>
+</div>
+
+<br>
+
+<div>
+<p>Division</p>
+<ol>
+<li>x / y = <strong id="4"></strong></li>
+<li>y / x = <strong id="7"></strong></li>
+</ol>
+</div>
+
+<br>
+
+<div>
+<p>Modulus</p>
+<ol>
+<li>x % y = <strong id="5"></strong></li>
+<li>y % x = <strong id="8"></strong></li>
+</ol>
+</div>
+
+<script>
+let x = 10, y = 5;
+
+let sum = x + y;
+
+let difference1 = x - y;
+
+let product = x * y;
+
+let quotient1 = x / y;
+
+let modulus1 = x % y;
+
+let difference2 = y - x;
+
+let quotient2 = y / x;
+
+let modulus2 = y % x;
+
+alert("x + y = " + sum + "\n" + "x - y = " + difference1 + "\n" + "x * y = " + product + "\n" + "x / y = " + quotient1 + "\n" + "x % y = " + modulus1 + "\n" + "y - x = " + difference2 + "\n" + "y / x = " + quotient2 + "\n" + "y % x = " + modulus2);
+
+document.getElementById("1").innerHTML = x + y;
+document.getElementById("2").innerHTML = x - y;
+document.getElementById("3").innerHTML = x * y;
+document.getElementById("4").innerHTML = x / y;
+document.getElementById("5").innerHTML = x % y;
+document.getElementById("6").innerHTML = y - x;
+document.getElementById("7").innerHTML = y / x;
+document.getElementById("8").innerHTML = y % x;
+
+</script>
+</body>
+</html>
